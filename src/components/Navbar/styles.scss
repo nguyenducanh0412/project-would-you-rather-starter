@@ -1,0 +1,46 @@
+.p-navbar {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #198754;
+  min-height: 3rem;
+  justify-content: space-between;
+  &-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    img {
+      height: 25px;
+      width: 25px;
+      margin-left: 15px;
+    }
+  }
+  &-logout {
+    cursor: pointer;
+  }
+}
+.p-menu {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  &-item {
+    transition: background 0.5s;
+  }
+  &-item:hover {
+    background: #198754;
+    color: #fff !important;
+  }
+  .nav-link {
+    padding: 5px;
+  }
+  .activated {
+    background: #198754;
+    color: #fff !important;
+    padding: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+}
